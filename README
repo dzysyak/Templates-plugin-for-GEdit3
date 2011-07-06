@@ -1,0 +1,11 @@
+About plugin
+I have created this plugin just for myself, very simple (mainly becaus I am not a python programmer). 
+So, if you have some fixes or ideas, your help is very appreciated. Let me know if you have better one, 
+as I am very interested in such plugin.
+
+Installation
+1/ Copy both files to ~/.local/share/gedit/plugins.
+2/ Enable "New file from template" plugin under plugin configuration.
+
+Configuration
+By default plugin looks for templates in ~/Templates. You can change this by editing the source.
