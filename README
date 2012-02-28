@@ -9,3 +9,6 @@ Installation
 
 Configuration
 By default plugin looks for templates in ~/Templates. You can change this by editing the source.
+
+More information can be found here (here you can ask a question too): 
+http://erlycoder.com/9/gedit-plugin-template-plugin-new-from-template
