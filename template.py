@@ -40,7 +40,7 @@ class TemplatePlugin(GObject.Object, Gedit.WindowActivatable):
 		# Create a new action group
 		self._action_group = Gtk.ActionGroup("OpenFromTemplateActions")
 		self._action_group.add_actions([("open_from_template", None, _("New From Template"),
-				                              None, _("Create a new file based on a custom defined template"),
+				                              "<control>t", _("Create a new file based on a custom defined template"),
 				                              self.on_open_from_template_activate)], self.window)
 
 		# Insert the action group
@@ -78,7 +78,9 @@ class TemplatePlugin(GObject.Object, Gedit.WindowActivatable):
 		# create and display a file chooser dialog
 		this_title = "Open Template File..."
 		homedir = os.path.expanduser("~")
-		chooser = Gtk.FileChooserDialog(this_title,action=Gtk.FileChooserAction.SAVE,buttons=( "Cancel", 0, 'Select template', 1))
+		chooser = Gtk.FileChooserDialog(this_title,action=Gtk.FileChooserAction.OPEN,buttons=( "Cancel", 0, 'Select template', 1))
+		chooser.set_default_response(1)
+		
 		chooser.set_current_folder(homedir+"/Templates")
 		response = chooser.run()
 
@@ -99,7 +101,7 @@ class TemplatePlugin(GObject.Object, Gedit.WindowActivatable):
 			doc = new_tab.get_document()
 			doc.set_text(new_text)
 		else: 
-			print 'Cancel'
+			print('Cancel')
 		chooser.destroy()
         
 #
