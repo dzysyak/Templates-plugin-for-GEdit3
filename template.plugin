@@ -7,3 +7,4 @@ Description=Allows to create new files from template
 Authors=Sergiy Dzysyak <dzysyak@gmail.com>
 Copyright=Copyright © 2011 Sergiy Dzysyak <dzysyak@gmail.com>
 Website=http://erlycoder.com
+Version=0.0.2
