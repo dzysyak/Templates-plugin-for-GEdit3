@@ -7,6 +7,9 @@ Installation
 1/ Copy both files to ~/.local/share/gedit/plugins.
 2/ Enable "New file from template" plugin under plugin configuration.
 
+IMPORTANT!
+For Ubuntu (and probably for some other distros) you should change python3 to python in template.plugin file.
+
 Configuration
 By default plugin looks for templates in ~/Templates. You can change this by editing the source.
 
