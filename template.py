@@ -1,3 +1,8 @@
+#
+# This file is part of <project> which is released under BSD License.
+# See file LICENSE or go to https://github.com/dzysyak/Templates-plugin-for-GEdit3/blob/master/LICENSE for full license details.
+#
+
 from gettext import gettext as _
 from gi.repository import GObject, Gio, Gtk, Gedit, GtkSource
 import os.path
